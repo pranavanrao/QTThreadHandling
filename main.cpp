@@ -1,5 +1,6 @@
 #include "mywidget.h"
 #include "heavydutyworker.h"
+#include "myworker.h"
 
 #include <QApplication>
 #include <QPushButton>
@@ -16,7 +17,8 @@ int main(int argc, char *argv[])
 
     w.show();
 
-    worker.doWork();
+    MyWorker work;
+    work.start();
 
     qDebug() << Q_FUNC_INFO << "Thread ID : " << QThread::currentThread();
 

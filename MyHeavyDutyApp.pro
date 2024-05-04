@@ -11,11 +11,13 @@ CONFIG += c++17
 SOURCES += \
     heavydutyworker.cpp \
     main.cpp \
-    mywidget.cpp
+    mywidget.cpp \
+    myworker.cpp
 
 HEADERS += \
     heavydutyworker.h \
-    mywidget.h
+    mywidget.h \
+    myworker.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
